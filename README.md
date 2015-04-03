@@ -3,7 +3,7 @@ This is a Dockerfile setup for HandBrake-CLI - https://trac.handbrake.fr/wiki/CL
 To run:
 
 ```
-docker run --name="handbrake" -d -v /mnt/user:/files -v /etc/localtime:/etc/localtime:ro pinion/handbrake
+docker run --name="handbrake" -d -v /mnt/user:/files -v /etc/localtime:/etc/localtime:ro pinion/docker-handbrake-cli
 ```
 
 Breaking this down:
