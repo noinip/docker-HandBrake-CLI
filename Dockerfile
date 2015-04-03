@@ -25,8 +25,8 @@ RUN apt-get clean
 VOLUME /files
 
 # manifest: expose, run
-ENTRYPOINT ["/sbin/my_init"]
-CMD ["/bin/bash"]
+# ENTRYPOINT ["/sbin/my_init"]
+# CMD ["/bin/bash"]
 
 # Now enter your container and use handbrake cli as normal
 # docker exec -i -t handbrake bash
