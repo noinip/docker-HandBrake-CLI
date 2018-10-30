@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.15
+FROM phusion/baseimage:0.9.22
 MAINTAINER pinion <pinion@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -15,7 +15,7 @@ RUN usermod -g 100 nobody
 RUN apt-get update -qq
 
 # install handbrake-cli
-RUN add-apt-repository ppa:stebbins/handbrake-snapshots
+RUN add-apt-repository ppa:stebbins/handbrake-releases
 RUN apt-get update
 RUN apt-get -y install handbrake-cli
 RUN apt-get clean
